@@ -1,0 +1,56 @@
+﻿<UserControl
+    x:Class="GreenHouseMonitoringClient.WarningDetail"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GreenHouseMonitoringClient"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="320"
+    d:DesignWidth="530">
+
+    <Grid x:Name="UserControl">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="1.5*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0"
+            Background="White"
+                BorderBrush="Black"
+                BorderThickness="1">
+            <Image x:Name="pic"
+                    Stretch="UniformToFill"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+        </Grid>
+        <StackPanel Grid.Column="1" VerticalAlignment="Center" Margin="5,0,5,0">
+  
+            <TextBlock Text="Warning Details" TextAlignment="Center">
+                
+            </TextBlock>
+            <TextBlock Text="" TextAlignment="Center">
+
+            </TextBlock>
+            <TextBlock Text="Equipment id : ">
+            </TextBlock>
+            <TextBlock x:Name="id" TextAlignment="Center">
+
+            </TextBlock>
+            <TextBlock Text="" TextAlignment="Center">
+
+            </TextBlock>
+            <TextBlock Text="Message : ">
+            </TextBlock>
+            <TextBlock x:Name="msg" TextAlignment="Center">
+
+            </TextBlock>
+            <TextBlock Text="" TextAlignment="Center">
+
+            </TextBlock>
+            <TextBlock Text="" TextAlignment="Center">
+
+            </TextBlock>
+            <Button HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="100" Height="30" Content="Confirmed" FontSize="15" Click="Button_Click"/>
+        </StackPanel>
+</Grid>
+</UserControl>
